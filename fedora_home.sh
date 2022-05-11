@@ -15,6 +15,8 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
 gsettings set org.gnome.desktop.peripherals.touchpad click-method 'area'
 gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrains Mono 11'
+gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
+gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 echo "Flatpak..."
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -22,8 +24,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y \
 com.discordapp.Discord \
 com.spotify.Client \
-org.videolan.VLC \
-org.mozilla.Thunderbird \
 com.brave.Browser 
 
 echo "Ajout de VS Code..."
