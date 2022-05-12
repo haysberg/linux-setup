@@ -24,7 +24,9 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y \
 com.discordapp.Discord \
 com.spotify.Client \
-com.brave.Browser 
+com.brave.Browser \
+com.gexperts.Tilix \
+com.mattjakeman.ExtensionManager
 
 echo "Ajout de VS Code..."
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -32,7 +34,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 dnf check-update
 sudo dnf update -y
-sudo dnf install -y git code dnf-plugins-core gnome-tweaks guake 
+sudo dnf install -y git code dnf-plugins-core gnome-tweaks 
 
 echo "Oh-My-Bash"
 nohup sh -c 'bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)" && sed -i 's/"font"/"agnoster"/' ~/.bashrc'
