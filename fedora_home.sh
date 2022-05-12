@@ -17,6 +17,7 @@ gsettings set org.gnome.desktop.peripherals.touchpad click-method 'area'
 gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrains Mono 11'
 gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
 gsettings set org.gnome.desktop.interface show-battery-percentage true
+gsettings set org.gnome.desktop.interface enable-hot-corners false
 
 echo "Flatpak..."
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
