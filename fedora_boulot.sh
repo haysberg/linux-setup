@@ -7,6 +7,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 flatpak install -y \
 com.mattermost.Desktop \
-com.axosoft.GitKraken \
+io.github.shiftey.Desktop \
 org.mozilla.Thunderbird \
 com.dropbox.Client
