@@ -10,3 +10,5 @@ com.mattermost.Desktop \
 io.github.shiftey.Desktop \
 org.mozilla.Thunderbird \
 com.dropbox.Client
+
+sudo dnf install rust cargo
