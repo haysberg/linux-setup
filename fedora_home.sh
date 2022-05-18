@@ -14,7 +14,6 @@ echo "GNOME Settings..."
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
 gsettings set org.gnome.desktop.peripherals.touchpad click-method 'area'
-gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrains Mono 11'
 gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.interface enable-hot-corners false
@@ -35,7 +34,9 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 dnf check-update
 sudo dnf update -y
-sudo dnf install -y git code dnf-plugins-core gnome-tweaks 
+sudo dnf install -y git code dnf-plugins-core gnome-tweaks remmina
 
 echo "Oh-My-Bash"
 nohup sh -c 'bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)" && sed -i 's/"font"/"agnoster"/' ~/.bashrc'
+
+gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrains Mono 11'
