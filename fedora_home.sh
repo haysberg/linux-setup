@@ -25,8 +25,8 @@ flatpak install -y \
 com.discordapp.Discord \
 com.spotify.Client \
 com.brave.Browser \
-com.gexperts.Tilix \
-com.mattjakeman.ExtensionManager
+com.mattjakeman.ExtensionManager \
+io.mpv.Mpv
 
 echo "Ajout de VS Code..."
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
